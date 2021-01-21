@@ -1,3 +1,7 @@
+:root {
+  --primary: #ffffff;
+  --secondary: #000000;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,49 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.hero {
+  width: 100%;
+}
+
+a {
+  font-size: 20px;
+}
+
+.header-h1 {
+  color: var(--primary);
+  position: absolute;
+  padding: 50px;
+  font-size: xx-large;
+}
+
+.header-h2 {
+  color: var(--primary);
+  position: absolute;
+  padding: 100px;
+  font-size: medium
+}
+
+h1 {
+  color: #000000;
+}
+
+.card-deck {
+  margin: 20px;
+}
+
+.card {
+  min-width: 30%;
+}
+
+.indicator {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: large;
+  color: black
+
+}
+.card-image {
+  width: 200px
 }
