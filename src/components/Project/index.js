@@ -1,25 +1,22 @@
 import React from 'react'
-import images from '../../../src/assets/projects/burn-book.jpg'
 
 function Project({ project }) {
     // const project = thisProject
     const { name, image, alt, repo, link, description } = project;
-    console.log(image)
-    let imgPath = `../../assets/projects/${image}`
-    console.log(imgPath)
+    let imgPath = require(`../../assets/projects/${image}`)
     return (
         <div className="">
             <div className="card-header" key={name}>
                 <h3>{name}</h3>
             </div>
             <div>
-            <img 
-            src={images}
-            alt={alt}
-            className="card-image"
-            />
+                <img
+                    src={imgPath}
+                    alt={alt}
+                    className="card-image"
+                />
             </div>
-            
+
             <div className="card-body">
                 <p>{description}</p>
                 <div>
